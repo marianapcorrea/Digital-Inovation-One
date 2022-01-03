@@ -1,2 +1,2 @@
 # Digital-Inovation-One
-Repositório para as atividades da plataforma Digital Inovation one.
+Repositório para as atividades da plataforma Digital Inovation One.
