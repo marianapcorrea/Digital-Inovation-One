@@ -15,15 +15,25 @@ body {
 }
 
 .container {
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-left: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 header .logo {
-  height: 80px;
-  margin-left: 10px;
+  height: 40px;
+}
+
+header nav {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.menuRight {
+  margin-left: auto;
 }
 
 header nav a {
@@ -41,3 +51,15 @@ header nav a:active {
   cursor: pointer;
   color: #fff;
 }
+
+.icon {
+  width: 15px;
+  margin-right: 20px;
+}
+
+.profile {
+  width: 30px;
+  border-radius: 5px;
+}
+
+/*Destaque*/
