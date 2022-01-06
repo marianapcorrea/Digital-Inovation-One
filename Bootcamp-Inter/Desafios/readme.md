@@ -1,4 +1,4 @@
-DESAFIOS DIGITAL INOVATION ONE
+**DESAFIOS DIGITAL INOVATION ONE**
 
 Repositório com a resolução dos desafios de JavaScript propostos pelo Bootcamp Inter da DIO.
 
