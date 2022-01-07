@@ -94,7 +94,8 @@ header nav a:active {
   margin-bottom: 20px;
 }
 
-.playButton img {
+.playButton img,
+.moreInfoButton img {
   height: 15px;
   margin-right: 5px;
 }
@@ -113,4 +114,23 @@ header nav a:active {
 .moreInfoButton {
   background-color: grey;
   color: white;
+  margin-left: 5px;
+}
+
+.button {
+  display: inline-flex;
+}
+
+.age img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.age {
+  display: flex;
+  float: right;
+  width: 60px;
+  background-color: grey;
+  opacity: 0.7;
+  border-left: 3px solid white;
 }
