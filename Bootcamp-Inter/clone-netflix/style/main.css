@@ -63,3 +63,54 @@ header nav a:active {
 }
 
 /*Destaque*/
+.emphasis {
+  background-image: url(/clone-netflix/img/dark.png);
+  height: 300px;
+  overflow: visible;
+  background-size: cover;
+  position: absolute;
+}
+
+.emphasisText {
+  width: 35%;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.synopsis {
+  font-size: 11px;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  text-shadow: #b3b3b3 0.1em 0.1em 0.2em;
+  margin-bottom: 10px;
+}
+
+.emphasisText h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.playButton img {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.playButton,
+.moreInfoButton {
+  padding: 5px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.moreInfoButton {
+  background-color: grey;
+  color: white;
+}
