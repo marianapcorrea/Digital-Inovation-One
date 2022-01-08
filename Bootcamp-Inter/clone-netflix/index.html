@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <!--owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
     <title>NETFLIX</title>
   </head>
   <body>
@@ -19,8 +22,7 @@
         <img
           class="logo"
           src="/clone-netflix/img/netflix-logo-png-2582.png"
-          alt="NETFLIX"
-        />
+          alt="NETFLIX"/>
         <nav>
           <a href="#">Inicio</a>
           <a href="#">Séries</a>
@@ -59,14 +61,48 @@
         </div>
         <div class="age"><img src="img/16.png" /></div>
       </div>
-      <div class="carrosselFilmes">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <!-- uma dessa por filme -->
-            <img src="" alt="" />
+      <div>
+          <div class="lists">
+            <h3 class="titleWatching ">Continuar assistindo</h3>
+            <div>
+                <img class="watching" src="img/tgp.jpg">
+                <img class="watching" src="img/pne.jpg">
+                <img class="watching" src="img/psfc.jpg">
+            </div>
           </div>
+          <div class="lists">
+                <h3 class="listTitle">Bombando</h3>
+                <div class="owl-carousel owl-theme"> <!-- Extensão 'owl-carousel', do JQuery, para criação de carrossel -->
+                    <div class="item"><img src="img/naoOlheParaCima.jpg"></div><div class="item"><img src="img/umLugarSilencioso.jpg"></div>
+                    <div class="item"><img src="img/theWitcher.jpg"></div>
+                    <div class="item"><img src="img/odat.jpg"></div>
+                    <div class="item"><img src="img/atypical.jpg"></div>
+                    <div class="item"><img src="img/avdsi.jpg"></div>
+                    <div class="item"><img src="img/cobraKai.jpg"></div>
+                    <div class="item"><img src="img/enolaHolmes.jpg"></div>
+                    
+                </div>
+          </div>
+          <div class="lists">
+                <h3 class="listTitle">Minha lista</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="img/brooklyn99.jpg"></div>
+                    <div class="item"><img src="img/gdr.jpg"></div>
+                    <div class="item"><img src="img/jtv.jpg"></div>
+                    <div class="item"><img src="img/lucifer.jpg"></div>
+                    <div class="item"><img src="img/theWitcher.jpg"></div>
+                    <div class="item"><img src="img/twd.jpg"></div>
+                    <div class="item"><img src="img/tua.jpg"></div>
+                    <div class="item"><img src="img/psfc.jpg"></div>
+                </div>
+            
+        </div>
         </div>
       </div>
     </main>
+<!--owl script - Colocar o script no final garante que o script só será carregado após o carregamento do html-->
+    <script src="js/olw/jquery.min.js"></script>
+    <script src="js/olw/owl.carousel.min.js"></script>
+    <script src="js/olw/setup.js"></script>
   </body>
 </html>

@@ -24,16 +24,14 @@ body {
 }
 
 header .logo {
-  height: 40px;
+  height: 80px;
 }
 
 header nav {
   margin-left: 30px;
-  font-size: 12px;
-}
-
-.menuRight {
-  margin-left: auto;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 header nav a {
@@ -52,20 +50,25 @@ header nav a:active {
   color: #fff;
 }
 
+.menuRight {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
 .icon {
-  width: 15px;
+  width: 30px;
   margin-right: 20px;
 }
 
 .profile {
-  width: 30px;
+  width: 50px;
   border-radius: 5px;
 }
 
 /*Destaque*/
 .emphasis {
   background-image: url(/clone-netflix/img/dark.png);
-  height: 300px;
+  height: 750px;
   width: 100%;
   overflow: visible;
   background-size: cover;
@@ -73,44 +76,45 @@ header nav a:active {
 }
 
 .emphasisText {
-  width: 35%;
-  margin-top: 100px;
+  width: 50%;
+  margin-top: 250px;
   margin-left: 30px;
 }
 
 .synopsis {
-  font-size: 11px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  text-shadow: #b3b3b3 0.1em 0.1em 0.2em;
-  margin-bottom: 10px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin-bottom: 20px;
+  line-height: 35px;
 }
 
 .emphasisText h3 {
   color: #fff;
-  font-size: 30px;
+  font-size: 100px;
   font-weight: bold;
   font-family: monospace;
-  letter-spacing: 10px;
-  margin-bottom: 20px;
+  letter-spacing: 60px;
+  margin-bottom: 15px;
 }
 
 .playButton img,
 .moreInfoButton img {
-  height: 15px;
+  height: 30px;
   margin-right: 5px;
 }
 
 .playButton,
 .moreInfoButton {
-  padding: 5px 15px;
-  font-size: 10px;
+  padding: 15px 35px;
+  font-size: 25px;
   font-weight: bold;
   display: inline-flex;
   align-items: center;
   border-radius: 5px;
   border: none;
-  margin: 2px;
+  margin: 5px;
   cursor: pointer;
 }
 
@@ -123,30 +127,56 @@ header nav a:active {
   display: inline-flex;
 }
 
-.age img {
-  height: 20px;
-  margin-left: 10px;
-}
-
-.age {
-  display: flex;
-  float: right;
-  width: 60px;
-  background-color: grey;
-  opacity: 0.7;
-  border-left: 3px solid white;
-}
-
 .moreInfoButton:hover,
 .playButton:hover {
   opacity: 0.7;
 }
 
 .click:active {
-  margin: 3px;
-  border: 1.5px solid white;
-  border-radius: 5px;
+  border: 2px solid white;
+  border-radius: 7px;
   opacity: 1;
 }
 
-/*Necessário configurar ainda o comportamento dos botões.*/
+.age img {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.age {
+  display: flex;
+  float: right;
+  width: 200px;
+  background-color: grey;
+  opacity: 0.7;
+  border-left: 3px solid white;
+}
+
+/*Capa das listas*/
+.watching {
+  height: 400px;
+  position: relative;
+  margin: 820px 35px 0 0;
+}
+
+.listTitle,
+.titleWatching {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.titleWatching {
+  margin-top: 765px;
+}
+
+.item img {
+  height: 100%;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+.lists {
+  margin-left: 50px;
+}
