@@ -1,6 +1,6 @@
 //O cifrão indica que é uma extenção JQuery
 $(".owl-carousel").owlCarousel({
-  loop: false,
+  loop: true,
   margin: 10,
   nav: false,
   responsive: {
