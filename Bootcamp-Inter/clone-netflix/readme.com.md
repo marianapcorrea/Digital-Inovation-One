@@ -6,10 +6,10 @@ Projeto  de clone da página inicial da Netflix, usando HTML5, CSS3 e o plugin "
 
 Tecnologias:
 
--*HTML5*;
+-**HTML5**;
 
--*CSS3;
+-**CSS3**;
 
--*JQuery*: Extensão **"Olw Carousel"** para exibição de imagens em carrossel.
+-**JQuery**: Extensão *"Olw Carousel"* para exibição de imagens em carrossel.
 
 
