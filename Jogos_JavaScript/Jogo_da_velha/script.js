@@ -124,7 +124,7 @@ function reiniciaJogo() {
   vencedorSelecionado.innerHTML = "";
   for (var i = 1; i <= 9; i++) {
     let quadrado = document.getElementById(i);
-    quadrado.style.color = "#eee";
+    quadrado.style.color = "#a29f83";
     quadrado.innerHTML = "-";
   }
   mudarJogador("X");
