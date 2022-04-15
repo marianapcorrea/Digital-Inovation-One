@@ -1,5 +1,7 @@
 const playerShip = document.querySelector(".playerShip");
 const playArea = document.querySelector("#mainPlayArea");
+const gameInstruction = document.querySelector(".gameInstruction");
+const startButton = document.querySelector(".startButton");
 const aliensImg = [
   "img/monster-1.png",
   "img/monster-2.png",
@@ -43,10 +45,10 @@ function moveDown() {
     position += 50;
     playerShip.style.top = `${position}px`;
   }
+  console.log("down");
 }
 
 //Disparos
-
 //Inicia processo
 function fireLaser() {
   let laser = createLaserElement();
@@ -100,8 +102,8 @@ function createAliens() {
   newAlien.src = alienSprite;
   newAlien.classList.add("alien");
   newAlien.classList.add("alienTransition");
-  newAlien.style.left = "370px";
-  newAlien.style.top = `${Math.floor(Math.random() * 330) + 30}`;
+  newAlien.style.left = "660px";
+  newAlien.style.top = `${Math.floor(Math.random() * 330) + 30}px`;
   playArea.appendChild(newAlien);
   moveAlien(newAlien);
 }
@@ -116,7 +118,7 @@ function moveAlien(alien) {
       if (Array.from(alien.classList).includes("deadAlien")) {
         alien.remove();
       } else {
-        //gameOver();
+        /*  gameOver(); */
       }
     } else {
       alien.style.left = `${xPosition - 4}px`;
@@ -143,5 +145,33 @@ function checkLaserCollision(laser, alien) {
   }
 }
 
-window.addEventListener("keydown", flyShip);
-createAliens();
+//Inicia o jogo
+startButton.addEventListener("click", (event) => {
+  playGame();
+});
+
+//Inicia o Loop
+function playGame() {
+  startButton.style.display = "none";
+  gameInstruction.style.display = "none";
+  window.addEventListener("keydown", flyShip);
+  alienInterval = setInterval(() => {
+    createAliens();
+  }, 2000);
+}
+
+//Game Over
+function gameOver() {
+  window.removeEventListener("keydown", flyShip); //trava interação do usuário
+  clearInterval(alienInterval); // Interrompe geração de novos inimigos
+  let aliens = document.querySelectorAll(".alien");
+  aliens.forEach((alien) => alien.remove()); //Remove aliens já criados
+  let lasers = document.querySelectorAll(".laser");
+  lasers.forEach((laser) => laser.remove()); //Remove lasers disparados
+  setTimeout(() => {
+    alert("GAME OVER!");
+    playerShip.style.display = "block";
+    gameInstruction.style.display = "block";
+    startButton.style.display = "block";
+  });
+}
